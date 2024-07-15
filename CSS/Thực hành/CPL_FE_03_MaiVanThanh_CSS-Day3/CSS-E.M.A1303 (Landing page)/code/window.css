@@ -1,0 +1,335 @@
+.container{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:sans-serif;
+    font-size: 10px;
+}
+.header{
+    width: 80%;
+    height: 100vh;
+    background-image: url(../resources/app.jpg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-left {
+    width: 32%;
+    height: 250px;
+    margin-left: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgba(210, 210, 210, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header-left-1{
+    font-size: 3em;
+    margin: 20px;
+}
+.underlined {
+    background-color: rgba(210, 210, 210, 0.6);
+    width: 90%;
+    height: 3px;
+    margin-top: 3px;
+    border-radius: 5px;
+
+}
+.header-left-2{
+    font-size: 2em;
+    margin: 20px;
+}
+.download{
+    width: 90%;
+    height: 40px;
+    background-color: rgba(29, 205, 23, 0.5);
+    border-radius: 5px;
+    color: rgba(210, 210, 210, 1);
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+}
+.header-right{
+    margin-right: 20px;
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.header-right i{
+    margin-left: 5px;
+    color: white;
+    font-size: 0.7em;
+}
+.descrip{
+    width: 80%;
+    height: 700px;
+    background-color: white;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.descript-left{
+    width: 70%;
+    margin-left: 10px;
+}
+.descript-left-1{
+    font-size: 6em;
+    color: black;
+    font-weight: 600;
+    margin: 0px;
+}
+.descript-left-2{
+    font-size: 5em;
+    color: green;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.descript-left-3{
+    margin-top: 20px;
+    font-size: 2em;
+}
+.descript-left-3 span{
+    font-size: 1.5em;
+}
+.download-app{
+    border: none;
+    color: rgb(199, 198, 198);
+    width: 300px;
+    height: 50px;
+    font-size: 2em;
+    color: black;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.descript-left-4{
+    font-size: 2em;
+    margin-top: 30px;
+
+}
+.descript-left-4 :first-child{
+    color: green;
+}
+.descript-left-4 :last-child{
+    color: rgb(35, 182, 231);
+}
+.descript-left-4 i{
+    cursor: pointer;
+}
+.descrip-right{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.descrip-right img{ 
+    margin-right: 5px;
+    width: 80%;
+    height: auto;
+}
+.clarity{
+    width: 80%;
+    height: 600px;
+    background-color: rgba(210, 210, 210, 1);
+    display: flex;
+}
+.clarity-left{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clarity-left img{
+    border-radius: 10px;
+    width: 90%;
+    height: auto;
+}
+.clarity-right{
+    width: 65%;
+    margin-left: 10%;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.clarity-right-1{
+    font-size: 6em;
+    color: black;
+    font-weight: 600;
+    margin: 0px;
+    margin-top: 80px;
+}
+.clarity-right-2{
+    font-size: 5em;
+    color: red;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.clarity-right-3{
+    margin-top: 20px;
+    font-size: 2em;
+}
+.clarity-right-3 span{
+    font-size: 1.5em;
+}
+.features{
+    width: 80%;
+    background-color:  rgb(114, 113, 113);
+}
+.features-top{
+    color: rgba(210, 210, 210, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 90px;
+}
+.features-top-1{
+    font-size: 6em;
+    font-weight: 600;
+    margin: 0px;
+}
+.features-top-2{
+    font-size: 2em;
+    font-weight: 500;
+
+}
+.features-bot{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.features-app{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.features-app i{
+    font-size: 6em;
+}
+.features-app p{
+    font-size: 2em;
+    font-weight: 500;
+    color: rgba(210, 210, 210, 1);
+}
+.pricing{
+    width: 80%;
+    height: auto;
+    background-color: white;
+}
+.pricing-top{
+    display: flex;
+    flex-direction: column;
+    margin: 70px 0px;
+    align-items: center;
+    justify-content: center;
+}
+.pricing-top-1{
+    font-size: 6em;
+    font-weight: 600;
+    margin: 0px;
+    color: black;
+}
+.pricing-top-2{
+    font-size: 2em;
+    font-weight: 500;
+    color: black;
+}
+.pricing-content{
+    display: flex;
+    margin-bottom: 80px;
+}
+.pricing-content-left ,.pricing-content-right{
+    width: 50%;
+    margin:0px 10px
+}
+td {
+    border: 1px solid rgba(210, 210, 210, 1);
+  }
+table{
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+th{
+    font-size: 2em;
+    height: 70px;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+}
+td{
+    font-size: 1.5em;
+    height: 50px;
+    text-align: center;
+}
+td span{
+    font-weight: 700;
+}
+.pricing-content-left th{
+    background-color: gray;
+}
+.pricing-content-right th{
+    background-color: rgb(207, 6, 6);
+}
+.pricing-hu{
+    height: 70px;
+    color:rgb(154, 150, 150); ;
+    font-size: 2em;
+}
+.pricing-but{
+    height: 70px;
+    background-color: rgba(210, 210, 210, 0.5);
+}
+.download-pri{
+    height: 40px;
+    color: white;
+    background-color: black;
+    border-radius: 1px;
+    border: none;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 1px;
+}
+.footer{
+    background-color: rgba(210, 210, 210, 1);
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+}
+.footer-top{
+    margin-top: 15px;
+    font-size: 2.2em;
+}
+.footer-bot{
+    margin-top: 5px;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.footer-bot a{
+    color: black;
+}
