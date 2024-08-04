@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-E.M.A1204</title>
+    <style>
+        :root{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .box{
+            border: 1px solid black;
+            width: 500px;
+            height: 600px;
+            margin-top: 40px;
+        }
+        .container{
+            margin-top: 40px;
+            width: 100%;
+            height: auto;
+        }
+        .top{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .userName,.pass,.conf-pass{
+            height: 120px;
+            font-size: 1.2em;
+            margin-left: 5%;
+            display: flex;
+            flex-direction: column;
+        }
+        .userName input,.pass input,.conf-pass input{
+            width: 90%;
+            height: 30px;
+            font-size: 1em;
+        }
+        .btn{
+            width: 100px;
+            height: 30px;
+            margin-top: 30px;
+            margin-left: 5%;
+            background-color: rgb(203, 134, 235);
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        .btn:hover{
+            background-color: rgb(192, 101, 234);
+        }
+        .error {
+            color: red;
+        }
+        .ok{
+            color: green;
+            font-size: 1.2em;
+            margin-left: 25%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="top">
+            <h1>Registration Form</h1>
+        </div>
+        <form class="container">
+            <span class="ok" id="successMessage"></span>
+            <div class="userName">
+                <p>Username:</p>
+                <input type="text" name="" id="name">
+                <span class="error" id="usernameError"></span>
+            </div>
+            <div class="pass">
+                <p>Password</p>
+                <input type="password" name="" id="pass">
+                <span class="error" id="passwordError"></span>
+            </div>
+            <div class="conf-pass">
+                <p>Confirm your password</p>
+                <input type="password" name="" id="conf-pass">
+                <span class="error" id="confirmPasswordError"></span>
+            </div>
+            <button class="btn" type="submit"> Register</button>
+        </form>
+        
+        <script src="main.js"></script>
+    </div>
+</body>
+</html>

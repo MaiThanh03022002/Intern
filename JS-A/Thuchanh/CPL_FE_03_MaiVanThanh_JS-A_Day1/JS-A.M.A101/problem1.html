@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function empty(o) {
+        o = null;
+        }
+        var x = [];
+        empty(x);
+        console.log(x); // là []
+        // Vì khi gán lại một tham chiếu bên trong một hàm, 
+        // ta chỉ thay đổi bản sao của tham chiếu đó,
+        // không thay đổi đối tượng gốc mà tham chiếu trỏ đến.
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Object basics: Task 2</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+
+    <section class="preview">
+
+    </section>
+
+  </body>
+  <script>
+    let info;
+
+    // Add your code here
+    let artist = {
+      name:"Khanh Phuong",
+      nationality:"Vietnamese",
+      genre:"pop",
+      debut:2006,
+      songs: [{
+              name:"Khong the co the",
+              released:2006
+            },
+            {
+              name:"Chiec khan gio am",
+              released:2009}
+              ]
+      };
+    info=`${artist.name} is a ${artist.nationality} ${artist.genre} artist who debuted in ${artist.debut}. He first song, "${artist.songs[0].name}", was released in ${artist.songs[0].released}. Another popular song is "${artist.songs[1].name}", released in ${artist.songs[1].released}.`;
+    // Don't edit the code below here!
+
+    const section = document.querySelector('section');
+    let para1 = document.createElement('p');
+    para1.textContent = info;
+    section.appendChild(para1);
+  </script>
+
+</html>

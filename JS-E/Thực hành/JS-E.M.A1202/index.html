@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Online Quiz</title>
+  <style>
+    :root{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .question-container {
+      margin-bottom: 20px;
+      border: 1px solid black;
+      width: 500px;
+      height: 200px;
+    }
+    .question{
+        padding: 20px;
+    }
+    .choices{
+        padding: 20px;
+    }
+    label{
+        display: flex;
+    }
+    .button-group {
+      margin-bottom: 20px;
+    }
+    .choice {
+      display: block;
+      margin: 5px 0;
+      cursor: pointer;
+    }
+    .score-display {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>JavaScript Online Quiz</h1>
+  <div class="question-container">
+    <div class="question"></div>
+    <div class="choices"></div>
+  </div>
+  <div class="button-group">
+    <button class="prev">Previous Question</button>
+    <button class="next">Next Question</button>
+    <button class="submit">Submit Quiz</button>
+  </div>
+  <div class="score-display"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>

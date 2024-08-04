@@ -1,0 +1,26 @@
+body {
+    font-family: 'Roboto', sans-serif; 
+    width: 100%;
+}
+
+.start-bootstrap{
+    height: 50px;
+}
+.sign-in{
+    width: 100px;
+}
+.login{
+    background-image: url(./resources/images/bg-masthead.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 500px;
+}
+.sign-up{
+    width: 30%;
+    height: 40px;
+}
+.input-sign-up{
+    width: 90%;
+    height: 40px;
+}

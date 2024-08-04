@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function mul(num1, num2) {
+            const bigNum1 = BigInt(num1);
+            const bigNum2 = BigInt(num2);
+            const result = bigNum1 * bigNum2;
+            return result.toString();
+        }
+        console.log(mul("12345678910111213", 89));
+    </script>
+</body>
+</html>

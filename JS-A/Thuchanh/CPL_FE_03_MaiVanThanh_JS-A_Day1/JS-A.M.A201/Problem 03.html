@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = 1;
+        function b() {
+            a = 10; // a ở đây là hàm không phải biến a vì thế không thay đổi giá trị biến a
+            return;
+            function a() {} // khai báo hàm a
+        }
+        b();
+        console.log(a);//1
+        
+    </script>
+
+</body>
+</html>
