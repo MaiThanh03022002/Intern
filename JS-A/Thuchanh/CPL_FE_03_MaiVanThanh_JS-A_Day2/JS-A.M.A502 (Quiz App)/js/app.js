@@ -37,11 +37,16 @@ class App {
     let numCorrect = 0;
 
     this.questions.forEach((currentQuestion, questionNumber) => {
+      let answer=[];
       const answerContainer = answerContainers[questionNumber];
       const selector = `input[name=question-${questionNumber}]:checked`;
-      const userAnswer = answerContainer.querySelector(selector) || {};
-
-      if (userAnswer.value === currentQuestion.correctAnswer) {
+      const userAnswer = Array.from(answerContainer.querySelectorAll(selector) || []);
+      answer=userAnswer.reduce((prev, cur) => {
+          return prev+cur.value;
+      },'');
+      console.log(answer);
+      
+      if (answer === currentQuestion.correctAnswer) {
         numCorrect++;
         answerContainers[questionNumber].style.color = 'lightgreen';
       } else {

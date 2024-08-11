@@ -1,6 +1,6 @@
 class MultiChoiceQuestion extends Question {
-  constructor(q) {
-    super(q);
+  constructor(q,index) {
+    super(q,index);
   }
 
   // Problem 2: Implement code here
